@@ -1,82 +1,53 @@
 <!DOCTYPE HTML>
-<HTML>
-<header>
-<title>Learning HTML</title>
-<style>
-    img {
-        width: 30%;
-    }
-    form {
-    
-    
-
-        margin: 0px;
-       
-        width: 50%;
-       
-
-    }
-    label,input {
-        margin: 5px;
-    }
-    .header {
-        background-color: brown;
-    }
-    .main {
-        background-color: aqua;
-    }
-</style>
-</header>
-<body>
-    <div>
-        <nav>
+<HTML lang="en">
+    <header>
+    <title>Learning HTML</title>
+    </style>
+    </header>
+    <body>
+        <header>
             <h1>THE PLACE TO BE!!</h1>
-           <ul>
-            <li><a >HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-           </ul> 
+        </header>
+        <nav>
+            <ul>
+                <li><a href="about.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul> 
         </nav>
-    </div>
-    <h3>my new page</h3>
-    <div>
-        <form tabindex="0" title="SIGN UP FORM">
-            <fieldset>
-                <legend> LOGIN DETAILS :</legend>
-                    <div class="header">
-                        <h4>SIGN UP FORM</h4>
-                        <p>provide your credentials for sign up</p>
-                    </div>
-                    <fieldset>
-                        <legend> PERSONAL INFO:</legend>
-                            <label for="uname">
-                                User name
-                            </label>
-                            <br>
-                            <input type="text" placeholder="" id="uname" required>
-                            <br>
-                            <label for="email">
-                                Email address
-                            </label>
-                            <br>
-                            <input type="email" placeholder="enter your email address" class="email" required>
-                    </fieldset>
-                    <fieldset>
-                        <legend>PASSWORD :</legend>
-                            <label for="pass">
-                                Password
-                            </label>
-                            <br>
-                            <input type="password" placeholder="enter your password" class="pass" required>
-                    </fieldset>
-                        <button type="submit" aria-label="submit your inputs" > submit</button>
-                    </div>
-            </fieldset>
-            
-        </form>
-    </div>
-    <div role="link"><h4>enter your name</h4></div>
-    <div id="saveChanges" tabindex="0" role="button" aria-pressed="false">Save</div>
+        <aside>
+            <ol>
+                <li><a href="#">header</a></li>
+                <li><a href="#">main content</a></li>
+                <li><a href="#">footer</a></li>
+            </ol>
+        </aside>
+        <main>
+            <h2> The Begining of the main content section.</h2>
+            <p>The main content of the web page is suppossed to appear here.</p>
+            <img src="pool.jpg" alt="a swimming pool">
+        </main>
+        <footer>
+            <h4>site map</h4>
+            <ul>
+                <li>home</li>
+                <li>login</li>
+                <li>sign up</li>
+                <li>blog</li>
+            </ul>
+            <h4>About Us</h4>
+            <ul>
+                <li>mission</li>
+                <li>Vission</li>
+                <li>Objective</li>
+            </ul>
+            <h4>Contact Us</h4>
+            <ul>
+                <li>phone</li>
+                <li>email address</li>
+                <li>location</li>
+            </ul>
+        </footer>
 
-</body>
+    </body>
 </HTML>
