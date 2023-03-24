@@ -3,6 +3,25 @@
     <header>
     <title>Learning HTML</title>
     </style>
+    <script>
+        function grewColor(color){
+           return window.alert("yes, the color of my car is "+color);
+        
+        }
+        function taxCal(basicS){
+           
+            if(basicS>20000){
+                
+                var tax =0.16*basicS;
+                system.out.println(" you will be taxed KSh."+ tax )
+                document.getElementById("demo").innerHTML = tax;
+            }
+                system.out.println("your basic salary is not taxable");
+                document.getElementById("demo").innerHTML = "new";
+
+            return;
+        }
+    </script>
     </header>
     <body>
         <header>
@@ -25,6 +44,24 @@
         <main>
             <h2> The Begining of the main content section.</h2>
             <p>The main content of the web page is suppossed to appear here.</p>
+            <br>
+            <p>What is the your color of your car?</p>
+            <div>
+                <button type="button" onclick=" grewColor('grew')">grew</button>
+                <button onclick=" grewColor('RED')">Red</button>
+                <button onclick=" grewColor('WHITE')">white</button>
+                <button onclick=" grewColor('MAROON')">maroon</button>
+                <button type="button" onclick="window.alert(5 + 6)">Try it</button>
+            </div>
+            <div>
+                <h3>Ammount taxable when earning:</h3>
+                <p id="demo"></p>
+                <button type="button" onclick=" taxCal('15000')">Basic S. of 15,000</button>
+                <button onclick=" taxCal(20000)">Basic S. of 20,000</button>
+                <button onclick=" taxCal('25000')">Basic S. of 25,000</button>
+                <button onclick=" taxCal('30000')">Basic S. of 30,000</button>
+                <button type="button" onclick="window.alert(5 + 6)">Basic S. of 45,000</button>
+            </div>
             <img src="pool.jpg" alt="a swimming pool">
         </main>
         <footer>
