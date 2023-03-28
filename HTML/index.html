@@ -9,17 +9,27 @@
         
         }
         function taxCal(basicS){
-           
-            if(basicS>20000){
+           var tax;
+            if(basicS < 20000){
+                tax="Hello, your basic salary is not taxable.";
                 
-                var tax =0.16*basicS;
-                system.out.println(" you will be taxed KSh."+ tax )
-                document.getElementById("demo").innerHTML = tax;
+            }else{
+                let z=0.16* basicS;
+                tax="your PAYE Tax is "+ z;
             }
-                system.out.println("your basic salary is not taxable");
-                document.getElementById("demo").innerHTML = "new";
-
-            return;
+            document.getElementById("demo").innerHTML = tax;}
+           
+        function mathCal(x,y,z){
+           var w;
+           w=x+y+z;
+           return document.getElementById("calc").innerHTML = + w;          
+        }
+        function loop(y){
+            let no;
+            for(y=1; y> 20; y++){
+                no = "the output is "+ y +"<br>";
+            }
+            return document.getElementById("loop").innerHTML = no;
         }
     </script>
     </header>
@@ -56,11 +66,14 @@
             <div>
                 <h3>Ammount taxable when earning:</h3>
                 <p id="demo"></p>
-                <button type="button" onclick=" taxCal('15000')">Basic S. of 15,000</button>
+                <button type="button" onclick=" taxCal(15000)">Basic S. of 15,000</button>
                 <button onclick=" taxCal(20000)">Basic S. of 20,000</button>
-                <button onclick=" taxCal('25000')">Basic S. of 25,000</button>
+                <button onclick=" taxCal(25000)">Basic S. of 25,000</button>
                 <button onclick=" taxCal('30000')">Basic S. of 30,000</button>
-                <button type="button" onclick="window.alert(5 + 6)">Basic S. of 45,000</button>
+                <button onclick=" mathCal(30,20, 70)">MATHS</button>
+                <button onclick=" loop(5)">LOOPS</button>
+                <h4 id="calc"></h4>
+                <h4 id="loop"></h4>
             </div>
             <img src="pool.jpg" alt="a swimming pool">
         </main>
