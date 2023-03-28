@@ -24,12 +24,13 @@
            w=x+y+z;
            return document.getElementById("calc").innerHTML = + w;          
         }
-        function loop(y){
-            let no;
-            for(y=1; y> 20; y++){
-                no = "the output is "+ y +"<br>";
+        function loop(){
+            var out, y ;
+            for(let y=0; y< 10; y++){
+                out +="Number is "+ y + " here."+ "<br>";
+                document.getElementById("loop").innerHTML = out;
             }
-            return document.getElementById("loop").innerHTML = no;
+            return;
         }
     </script>
     </header>
@@ -71,7 +72,7 @@
                 <button onclick=" taxCal(25000)">Basic S. of 25,000</button>
                 <button onclick=" taxCal('30000')">Basic S. of 30,000</button>
                 <button onclick=" mathCal(30,20, 70)">MATHS</button>
-                <button onclick=" loop(5)">LOOPS</button>
+                <button onclick=" loop()">LOOPS</button>
                 <h4 id="calc"></h4>
                 <h4 id="loop"></h4>
             </div>
